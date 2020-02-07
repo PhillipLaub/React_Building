@@ -32,8 +32,7 @@ function Item({ match }) {
     <div>
       <h1>Title : {item.title}</h1>
       <h1>Artist : {item.primary_artist.name}</h1>
-      <img src={item.header_image_url} alt='artist headshot'></img>
-
+      <img src={item.header_image_url} alt="artist headshot"></img>
     </div>
   );
 }

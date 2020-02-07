@@ -6,13 +6,14 @@ import { Link } from 'react-router-dom';
 function Nav() {
   return (
     <nav>
-      <h3>Genius API</h3>
+      <Link to="/"><h1>Genius API</h1></Link>
+      
       <ul className="nav-links">
         <Link to="/about">
         <li>About</li>
         </Link>
-        <Link to="/artists">
-        <li>Artists</li>
+        <Link to="/songs">
+        <li>Songs</li>
         </Link>
       </ul>
     </nav>

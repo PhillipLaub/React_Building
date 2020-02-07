@@ -2,7 +2,7 @@ import React, { useState, useEffect }from 'react';
 import '../App.css';
 import {Link} from 'react-router-dom';
 
-function Artists() {
+function Songs() {
 
   useEffect(() => {
     fetchItems();
@@ -26,7 +26,7 @@ function Artists() {
 
   return (
     <div className="App">
-      <h1>Artists</h1>
+      <h1>Songs</h1>
       {/* {items.map(item => (
           <h1 key={item.itemId}>
             <Link to={`/shop/${item.itemId}`}>{item.item.name}</Link></h1>
@@ -34,11 +34,11 @@ function Artists() {
 
       {items.map(item => (
           <h4 key={item.id}>
-            <Link to={`/artists/${item.id}`}>{item.title}</Link></h4>
+            <Link to={`/songs/${item.id}`}>{item.title}</Link></h4>
       ))}
       
     </div>
   );
 }
 
-export default Artists;
+export default Songs;

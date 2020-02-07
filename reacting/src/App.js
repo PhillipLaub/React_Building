@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./components/About";
 import Nav from "./components/Nav";
 import ItemDetail from "./components/ItemDetail";
-import Artists from "./components/Artists";
+import Songs from "./components/Songs";
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/artists" exact component={Artists} />
-          <Route path="/artists/:id" component={ItemDetail}></Route>
+          <Route path="/songs" exact component={Songs} />
+          <Route path="/songs/:id" component={ItemDetail}></Route>
         </Switch>
       </div>
     </Router>
@@ -28,6 +28,11 @@ function App() {
 const Home = () => (
   <div>
     <h1>Home Page</h1>
+    <div className="row">
+      <div className="col-md-2"></div>
+      <div className="col-md-8"><p>Just messing around with Genius API, playing with Hooks and React Router</p></div>
+      <div className="col-md-2"></div>
+    </div>
   </div>
 );
 
